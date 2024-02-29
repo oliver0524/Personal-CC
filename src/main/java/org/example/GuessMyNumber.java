@@ -1,7 +1,17 @@
 package org.example;
 import java.util.Scanner;
 
+
 public class GuessMyNumber {
+
+    public static void main(String[] args) {
+
+        Scanner console = new Scanner(System.in);
+        System.out.println("Guess My Number Game");
+        System.out.println();
+        int num = GuessMyNumber.guessMyNumber();
+        System.out.println("The guessed number " + num);
+    }
 
     public static int guessMyNumber() {
 

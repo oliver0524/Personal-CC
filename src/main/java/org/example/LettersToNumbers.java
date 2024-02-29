@@ -2,7 +2,18 @@ package org.example;
 
 import java.util.Locale;
 
+
 public class LettersToNumbers {
+
+    public static void main(String[] args) {
+
+        String s = "AByxZ";
+        String s1 = LettersToNumbers.lettersToNumbers(s);
+        System.out.println("Letters: " + s);
+        System.out.println("Letters to Numbers: " + s1);
+        String s2 = LettersToNumbers.lettersToNumbers2(s);
+        System.out.println("Letters to Numbers2: " + s2);
+    }
 
     public static String lettersToNumbers(String s) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";

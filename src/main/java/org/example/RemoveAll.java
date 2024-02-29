@@ -1,6 +1,22 @@
 package org.example;
 
 class RemoveAll {
+
+    public static void main(String[] args) {
+        String inputString = "Hello World";
+        char charToRemove = 'o';
+
+        RemoveAll removeAll = new RemoveAll();
+
+        // Method 1: Using a for loop
+        String result1 = removeAll.removeCharacterUsingLoop(inputString, charToRemove);
+        System.out.println("Result using loop: " + result1);
+
+        // Method 2: Using replaceAll method
+        String result2 = removeAll.removeCharacterUsingReplaceAll(inputString, charToRemove);
+        System.out.println("Result using replaceAll: " + result2);
+    }
+
     // Method to remove a character using a for loop
     public static String removeCharacterUsingLoop(String str, char ch) {
         StringBuilder result = new StringBuilder();

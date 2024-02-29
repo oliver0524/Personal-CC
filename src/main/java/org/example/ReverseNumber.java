@@ -5,6 +5,17 @@ package org.example;
  * For example, if the input is 12345, the output should be 54321.*/
 public class ReverseNumber {
 
+    public static void main(String[] args) {
+        //Scanner console = new Scanner(System.in);
+        int number = 3489;
+        System.out.println("Initial number: " + number);
+
+        ReverseNumber reverseNumber = new ReverseNumber();
+
+        int result3 = ReverseNumber.reverseNumber(number);
+        System.out.println("Reverse number: " + result3);
+    }
+
     public static int reverseNumber(int number) {
 
             int reverse = 0;
