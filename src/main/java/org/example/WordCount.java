@@ -7,7 +7,7 @@ public class WordCount {
 
     public static void main(String[] args) {
 
-        String input = "apple banana pear melon";
+        String input = "apple banana pear melon tr";
         System.out.println("Initial string: " + input);
         int count = count(input);
         System.out.println("The word count is: " + count);
@@ -20,13 +20,14 @@ public class WordCount {
     public static int count(String in) {
         int wordCount = 0;
         String words[] = in.split(" ");  // split string into substrings delimited by " "
-        if (words != null) {
-            for (String word : words) {         // for each encountered word, increment the count
-                System.out.println("The word is: " + word);
-                wordCount++;
-            }
-        }
-        return wordCount;
+        return words.length;
+//        if (words != null) {
+//            for (String word : words) {         // for each encountered word, increment the count
+//                System.out.println("The word is: " + word);
+//                wordCount++;
+//            }
+//        }
+//        return wordCount;
     }
 
 }
