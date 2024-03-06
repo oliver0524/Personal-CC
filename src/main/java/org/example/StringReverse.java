@@ -20,7 +20,8 @@ public class StringReverse {
 
         /** create an object named ‘temp’ of StringBuffer class and then append() method
          * inside of the for loop to add characters of a string starting from the end */
-            StringBuffer temp = new StringBuffer();
+
+        StringBuffer temp = new StringBuffer();
 
             for (int i=str.length() - 1; i>=0; i--){
                 temp.append(str.charAt(i));

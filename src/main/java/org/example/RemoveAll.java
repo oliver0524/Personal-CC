@@ -1,5 +1,9 @@
 package org.example;
 
+/** output
+ * Result using loop: Hell Wrld
+ * Result using replaceAll: Hell Wrld */
+
 class RemoveAll {
 
     public static void main(String[] args) {
@@ -19,7 +23,9 @@ class RemoveAll {
 
     // Method to remove a character using a for loop
     public static String removeCharacterUsingLoop(String str, char ch) {
+
         StringBuilder result = new StringBuilder();
+
         for (int i = 0; i < str.length(); i++) {
             char currentChar = str.charAt(i);
             if (currentChar != ch) {
@@ -31,6 +37,7 @@ class RemoveAll {
 
     // Method to remove a character using replaceAll method
     public static String removeCharacterUsingReplaceAll(String str, char ch) {
+
         String charToRemove = String.valueOf(ch);
         return str.replaceAll(charToRemove, "");
     }

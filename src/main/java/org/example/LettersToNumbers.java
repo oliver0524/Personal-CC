@@ -2,6 +2,10 @@ package org.example;
 
 import java.util.Locale;
 
+/** output
+ * Letters: AByxZ
+ * Letters to Numbers: 0102242526
+ * Letters to Numbers2: 12252426*/
 
 public class LettersToNumbers {
 

@@ -17,7 +17,7 @@ public class IsThereSum {
         check(input, target);
     }
 
-    //return true if two separate values in the array add up to a target, false otherwise
+    /** return true if two separate values in the array add up to a target, false otherwise */
     public static boolean check(int[] arr, int target) {
         // initialize arr2
         int[] arr2 = new int[arr.length];

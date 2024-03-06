@@ -28,7 +28,7 @@ public class Palindrome {
          * as the nth position of a String moving backwards. */
 
         // create an object named ‘temp’ of StringBuffer class and then use append() method to add chars from the end
-        // reverse the string
+        // reverse the string. StringBuffer class is used to create mutable (modifiable) strings
             StringBuffer temp = new StringBuffer();
 
             for (int i=input.length() - 1; i>=0; i--){
