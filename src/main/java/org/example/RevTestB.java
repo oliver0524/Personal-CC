@@ -2,8 +2,7 @@ import java.lang.*;
 import java.io.*;
 import java.util.*;
 
-/** This code first concatenates all the strings in each array to form two separate strings,
- * then compares the two resulting strings. If they are equal, it returns true; otherwise, it returns false.*/
+/** find the number of even occurrences before the first occurrence of X in the array A; N is the length of the array*/
 
 public class RevTestB {
 
@@ -16,7 +15,7 @@ public class RevTestB {
             if (A[i] == X) {
                 break;
             }
-            if (A[i] %2 ==0) {
+            if (A[i] % 2 == 0) {
                 evenNum++;
             }
         }
