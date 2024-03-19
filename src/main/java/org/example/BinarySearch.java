@@ -3,7 +3,7 @@ package org.example;
 import java.util.Arrays;
 import java.util.List;
 
-/** two methods; linear and binary searhc. Compare the times that both searches take using
+/** two methods; linear and binary search. Compare the times that both searches take using
  * automatically generated array with a large amount of numbers*/
 public class BinarySearch {
 
