@@ -35,6 +35,15 @@ public class ValidateUrl {
                 }
             }
 
+            for (int i=0; i< s1.size(); i++) {
+                System.out.println("Here's the original url: " + s1.toArray()[i]);
+                if (validate2((String) s1.toArray()[i])) {
+                    System.out.println("The url format is valid");
+                } else {
+                    System.out.println("The url format is invalid");
+                }
+            }
+
     }
 
     /**
@@ -99,5 +108,32 @@ public class ValidateUrl {
         }
 
         return true;
+    }
+
+    public static boolean validate2(String url){
+
+        //URL has to start with "https://"
+        if (!url.startsWith("https://")){
+            return false;
+        }
+        //URL without an extension is rejected
+        if(!url.matches("https://[^/]+\\.[a-zA-Z]+.*")){
+            return false;
+        }
+        //URL that attempts to establish a path after query parameters is rejected
+        if (url.matches(".+\\?.*/.*")){
+            return false;
+        }
+        try{
+            new URL(url);
+            return true;
+        } catch (Exception e){
+            return false;
+        }
+    }
+
+    private static class URL {
+        public URL(String url) {
+        }
     }
 }
